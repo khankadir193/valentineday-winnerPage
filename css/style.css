@@ -121,36 +121,60 @@ header img {
 .tab-categories {
   background: url("../img/Slide-button-bg.png") center/100% 100% no-repeat;
   width: 85%;
-  height: 50px;
+  height: 47px;
   margin: auto;
   margin-top: 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 38px;
+
 }
 
-.singingbtn {
-  background: url("../img/Shayri-unselected-btn.png") center/100% 100% no-repeat;
-  height: 13vw;
+/* .singingbtn { */
+  /* background: url("../img/Shayri-unselected-btn.png") center/100% 100% no-repeat; */
+  /* height: 13vw;
   width: 30%;
-}
+} */
 
-.fashionbtn {
-  background: url("../img/Singing-unselected-btn.png") center/100% 100% no-repeat;
-  height: 13vw;
+/* .fashionbtn { */
+  /* background: url("../img/Singing-unselected-btn.png") center/100% 100% no-repeat; */
+  /* height: 13vw;
   width: 30%;
+} */
+.shayariBtn{ display:none}
+.singingBtn{ display:none}
+.shayriBtn.active {
+  background: url("../img/Shayari-Battle.png") center/ 100% 100% no-repeat;
+  height: 13vw;
+  /* width: 40%; */
+  /* position: relative; */
+  transform: scale(1.3);
+
+  
 }
 
 .singingbtn.active {
-  background: url("../img/Shayari-Battle.png") center/ 100% 100% no-repeat;
-  height: 13vw;
-  width: 30%;
-}
-
-.fashionbtn.active {
   background: url("../img/Singing-Battle.png") center/ 100% 100% no-repeat;
   height: 13vw;
-  width: 30%;
+  /* width: 40%; */
+  /* position: relative; */
+  transform: scale(1.3);
+  /* display: none; */
+}
+
+.tab1 {
+  width: 45%;
+  height: 10vw;
+  margin-top: 4px;
+}
+.tab,
+.tab2,
+.tab3,
+.tabL {
+  width: 52%;
+  /* height: 110%; */
+  transform: scale(1.1);
+  margin-top: -1px;
 }
 
 /* ----------Toppers-------- */
@@ -367,3 +391,23 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+
+/* .singing.active{
+  background: url("../img/Singing-Battle.png") center/100% 100% no-repeat;
+  transform: scale(1.3);
+}
+ 
+.tab-categories .singingL.active{
+  background: url("../img/Singing-Battle.png") center/100% 100% no-repeat;
+  transform: scale(1.3);
+}
+ 
+.fashion.active {
+  background: url("../img/Shayari-Battle.png") center/100% 100% no-repeat;
+  transform: scale(1.3);
+}
+.tab-categories .fashionL.active{
+  background: url("../img/Shayari-Battle.png") center/100% 100% no-repeat;
+  transform: scale(1.3);
+} */

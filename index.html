@@ -117,13 +117,45 @@
 
             <div class="tab-content tab-content-talent">    
              
-                <div class=" tab-categories">
-                    <button class="singingbtn tab1 tab2  "></button>
+                <!-- <div class=" tab-categories">
+
+                    <button class="singingbtn tab1 tab2"></button>
                     <button class="fashionbtn  tab1 tab2 active "></button>
+                </div> -->
+
+                <div class=" tab-categories" style="position: relative;">
+                  <div
+                  style="
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    max-width: 83%;
+                    gap: 11vw;
+                    top: 3.5vw;
+                    left: 7vw;
+                  "
+                >
+                  <div style="height: 8vw">
+                    <img
+                      style="width: 100%"
+                      src="./img/Shayri-unselected-btn.png"
+                      alt="shayari-unselected"
+                    />
+                  </div>
+                  <div style="height: 8vw">
+                    <img
+                      style="width: 100%"
+                      src="./img/Singing-unselected-btn.png"
+                      alt="singing-unselected"
+                    />
+                  </div>
+                </div>
+                  <button id="fashionL" class="shayriBtn tab1 tab2 tab3 tabL active"></button>
+                  <button id="singingL" class="singingbtn  tab1 tab2 tab3 tabL"></button>
                 </div>
 
                 
-                <div id="singing" class="leaderboard-1 singing">
+                <div id="singing" class="leaderboard-1 singing active">
                   <div class="topper-container">
                     <div style="margin-top: 0" class="top top-1">
                       <div class="avatar">
@@ -210,7 +242,7 @@
                     </template>
                   </div>
                 </div>
-                <div id="fashion" class="leaderboard-1 fashion active">
+                <div id="fashion" class="leaderboard-1 fashion">
                   <div class="topper-container">
                     <div style="margin-top: 0" class="top top-1">
                       <div class="avatar">

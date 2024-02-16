@@ -24,7 +24,8 @@ tabs.forEach((tab, i) => {
 // Talent Switching
 const tabs1 = document.querySelectorAll(".tab-categories > button");
 let contentLeaderboard = document.querySelectorAll(".leaderboard-1");
-console.log(tabs1);
+console.log('tabs1........',tabs1);
+console.log('contentLeaderboard',contentLeaderboard)
 tabs1.forEach((tab, i) => {
   // console.log(tab);
   tab.addEventListener("click", () => {
@@ -151,8 +152,8 @@ async function renderLeaderboardData(data, name, roundNumber,category) {
 async function init() {
     const leaderboardData = await fetchSheetData("D170:F179");
     
-    const leaderboardDataS1 = await fetchSheetData("D184:F189");
-    const leaderboardDataF1 = await fetchSheetData("D194:F201");
+    const leaderboardDataS1 = await fetchSheetData("D184:F188");
+    const leaderboardDataF1 = await fetchSheetData("D194:F198");
     
     renderLeaderboardData(leaderboardData.table, "user", "1");
     renderLeaderboardData(leaderboardDataF1.table,"talent",'1','fashion');
