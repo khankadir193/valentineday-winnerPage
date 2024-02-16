@@ -6,12 +6,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
 button {
   background: none;
   outline: none;
   box-shadow: none;
   border: 0;
 }
+
 header {
   position: relative;
 }
@@ -19,13 +21,16 @@ header {
 header img {
   width: 100%;
 }
+
 .top {
   max-width: 65vw;
   margin: 5vw auto;
 }
+
 .top img {
   width: 100%;
 }
+
 /* h1 {
   color: darkred;
   text-align: center;
@@ -42,12 +47,15 @@ header img {
   margin: auto;
   place-items: center;
 }
+
 .col-two .prize:nth-child(3) {
   grid-column: span 2 / span 2;
 }
+
 .col-two .prize:nth-child(3) .cup {
   max-width: 190px;
 }
+
 .cup {
   width: 100%;
 }
@@ -55,6 +63,7 @@ header img {
 .prize {
   position: relative;
 }
+
 .prize span {
   position: absolute;
 }
@@ -69,16 +78,19 @@ header img {
   margin: auto;
   display: flex;
 }
+
 .user.active {
   background-image: url("../img/User-Button.png");
   background-repeat: no-repeat;
   background-size: 100% 90%;
 }
+
 .talent.active {
   background-image: url("../img/Talent-Button.png");
   background-repeat: no-repeat;
   background-size: 100% 90%;
 }
+
 .tab {
   width: 52%;
   transform: scale(1.1);
@@ -88,51 +100,55 @@ header img {
 .tab-content {
   display: none;
 }
+
 .tab-content.active {
   display: block;
 }
 
 /* -------- Leaderboard -------- */
-.leaderboard,.leaderboard-1 {
+.leaderboard,
+.leaderboard-1 {
   display: none;
 }
-.leaderboard.active,.leaderboard-1.active {
+
+.leaderboard.active,
+.leaderboard-1.active {
   background: url("../img/leaderboardBg.png") center/100% 100% no-repeat;
   padding: 5vw 0;
   display: block;
 }
+
 .tab-categories {
-    background: url("../img/Slide-button-bg.png") center/100% 100% no-repeat;
-    width: 85%;
-    height: 50px;
-    margin: auto;
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-    gap: 38px;
-  }
+  background: url("../img/Slide-button-bg.png") center/100% 100% no-repeat;
+  width: 85%;
+  height: 50px;
+  margin: auto;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+}
 
 .singingbtn {
-  background: url("../img/Shayri-unselected-btn.png") center/100% 100%
-    no-repeat;
+  background: url("../img/Shayri-unselected-btn.png") center/100% 100% no-repeat;
   height: 13vw;
   width: 30%;
 }
+
 .fashionbtn {
-  background: url("../img/Singing-unselected-btn.png") center/100% 100%
-    no-repeat;
+  background: url("../img/Singing-unselected-btn.png") center/100% 100% no-repeat;
   height: 13vw;
   width: 30%;
 }
+
 .singingbtn.active {
-  background: url("../img/Shayari-Battle.png") center/ 100% 100%
-    no-repeat;
+  background: url("../img/Shayari-Battle.png") center/ 100% 100% no-repeat;
   height: 13vw;
   width: 30%;
 }
+
 .fashionbtn.active {
-  background: url("../img/Singing-Battle.png") center/ 100%
-    100% no-repeat;
+  background: url("../img/Singing-Battle.png") center/ 100% 100% no-repeat;
   height: 13vw;
   width: 30%;
 }
@@ -148,9 +164,11 @@ header img {
   justify-content: center;
   padding-top: 22vw;
 }
+
 .beans-amount img {
   width: 100%;
 }
+
 .beans-amount span {
   position: absolute;
   color: #fff;
@@ -168,6 +186,7 @@ header img {
   background: url("../img/rank\ bg.png") center/100% 100% no-repeat;
   padding: 2vw;
 }
+
 .topper-container .top {
   height: 45vw;
   width: 72%;
@@ -181,18 +200,22 @@ header img {
   font-size: 3vw;
   overflow: hidden;
 }
+
 .topper-container .top-1 {
   order: 2;
 }
-.top-1 .avatar{
+
+.top-1 .avatar {
   background: url("../img/Gold.png") center/100% 100% no-repeat;
   overflow: hidden;
   padding: 5vw;
 }
+
 .topper-container .top-2 {
   margin-top: 18%;
   order: 1;
 }
+
 .top-2 .avatar {
   background: url("../img/Silver.png") center/100% 100% no-repeat;
   overflow: hidden;
@@ -203,17 +226,20 @@ header img {
   margin-top: 18%;
   order: 3;
 }
+
 .top-3 .avatar {
   background: url("../img/Bronze.png") center/100% 100% no-repeat;
   overflow: hidden;
   padding: 5vw;
 }
+
 .avatar {
   max-width: 10vw;
   max-height: 10vw;
   border-radius: 50%;
   margin: auto;
 }
+
 .avatar img {
   width: 100%;
   height: 100%;
@@ -221,19 +247,20 @@ header img {
 }
 
 .top .avatar {
-  min-width:10vw ;
+  min-width: 10vw;
   min-height: 10vw;
   display: flex;
   align-items: center;
   /* margin-top: 1vw; */
   justify-content: center;
 }
-.top .avatar img{
+
+.top .avatar img {
   margin-top: 3.5vw;
-    border-radius: 50%;
-    width: 149%;
-    height: 129%;
-    object-fit: contain;
+  border-radius: 50%;
+  width: 149%;
+  height: 129%;
+  object-fit: contain;
 }
 
 .winner-container .avatar {
@@ -243,6 +270,7 @@ header img {
   border: 1px solid goldenrod;
   background: black;
 }
+
 .info {
   margin-bottom: 3vw;
   font-size: 3.2vw;
@@ -252,19 +280,22 @@ header img {
   color: white;
   font-weight: 600;
 }
+
 .info .name {
   /* text-wrap: nowrap; */
 }
+
 .info .beans-container {
   margin-top: 0.5vw;
   display: flex;
   gap: 1vw;
   font-size: 2.5vw;
 }
+
 .info .beans-container .bean-img {
   max-width: 3vw;
   max-height: 3vw;
-  
+
 }
 
 .winner-container {
@@ -304,6 +335,7 @@ header img {
   gap: 1vw;
   background: #232323;
 }
+
 .winner-strip .info .beans-container .bean-img {
   max-width: 5vw !important;
 }
@@ -314,8 +346,24 @@ header img {
   background-repeat: no-repeat;
   width: 100%;
   height: 30vh;
-  /* margin-top: -6rem; */
+  margin-top: -3rem;
   /* position: absolute; */
   /* z-index: -1000; */
   /* margin: 0vw auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  background-color: rgb(2, 64, 111);
+  border-radius: 6vw;
+  width: 70%;
+  border: 1px solid rgb(99, 99, 22);
+  text-align: center;
+  color: white;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
