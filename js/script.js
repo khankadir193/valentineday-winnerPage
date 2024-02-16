@@ -149,10 +149,10 @@ async function renderLeaderboardData(data, name, roundNumber,category) {
 }
 
 async function init() {
-    const leaderboardData = await fetchSheetData("A68:C77");
+    const leaderboardData = await fetchSheetData("D170:F179");
     
-    const leaderboardDataS1 = await fetchSheetData("A88:C95");
-    const leaderboardDataF1 = await fetchSheetData("A80:C85");
+    const leaderboardDataS1 = await fetchSheetData("D184:F189");
+    const leaderboardDataF1 = await fetchSheetData("D194:F201");
     
     renderLeaderboardData(leaderboardData.table, "user", "1");
     renderLeaderboardData(leaderboardDataF1.table,"talent",'1','fashion');
