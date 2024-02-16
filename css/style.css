@@ -1,0 +1,309 @@
+body {
+  background-image: url("../img/BG.jpg");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+}
+button {
+  background: none;
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+}
+.top {
+  max-width: 65vw;
+  margin: 5vw auto;
+}
+.top img {
+  width: 100%;
+}
+/* h1 {
+  color: darkred;
+  text-align: center;
+  font-style: italic;
+  font-family: cursive;
+  text-align: center;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff,
+    -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+} */
+.col-two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  margin: auto;
+  place-items: center;
+}
+.col-two .prize:nth-child(3) {
+  grid-column: span 2 / span 2;
+}
+.col-two .prize:nth-child(3) .cup {
+  max-width: 190px;
+}
+.cup {
+  width: 100%;
+}
+
+.prize {
+  position: relative;
+}
+.prize span {
+  position: absolute;
+}
+
+.tab-btns {
+  background-image: url("../img/User-Talent-slider-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 70%;
+  height: 12vw;
+  margin: auto;
+  display: flex;
+}
+.user.active {
+  background-image: url("../img/User-Button.png");
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+}
+.talent.active {
+  background-image: url("../img/Talent-Button.png");
+  background-repeat: no-repeat;
+  background-size: 100% 90%;
+}
+.tab {
+  width: 52%;
+  transform: scale(1.1);
+  margin-top: -1px;
+}
+
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+/* -------- Leaderboard -------- */
+.leaderboard,.leaderboard-1 {
+  display: none;
+}
+.leaderboard.active,.leaderboard-1.active {
+  background: url("../img/leaderboardBg.png") center/100% 100% no-repeat;
+  padding: 5vw 0;
+  display: block;
+}
+.tab-categories {
+   
+    width: 85%;
+    height: 50px;
+    margin: auto;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+  }
+
+.singingbtn {
+  background: url("../img/Shayri-unselected-btn.png") center/100% 100%
+    no-repeat;
+  height: 13vw;
+  width: 30%;
+}
+.fashionbtn {
+  background: url("../img/Singing-unselected-btn.png") center/100% 100%
+    no-repeat;
+  height: 13vw;
+  width: 30%;
+}
+.singingbtn.active {
+  background: url("../img/Shayari-Battle.png") center/ 100% 100%
+    no-repeat;
+  height: 13vw;
+  width: 30%;
+}
+.fashionbtn.active {
+  background: url("../img/Singing-Battle.png") center/ 100%
+    100% no-repeat;
+  height: 13vw;
+  width: 30%;
+}
+
+/* ----------Toppers-------- */
+
+.beans-amount {
+  max-width: 50%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 22vw;
+}
+.beans-amount img {
+  width: 100%;
+}
+.beans-amount span {
+  position: absolute;
+  color: #fff;
+  margin-left: 6vw;
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.topper-container {
+  display: flex;
+  width: 78%;
+  gap: 1vw;
+  margin: auto;
+  margin-top: 32vw;
+  background: url("../img/rank\ bg.png") center/100% 100% no-repeat;
+  padding: 2vw;
+}
+.topper-container .top {
+  height: 45vw;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  color: #fff;
+  padding-inline: 3vw;
+  gap: 3px;
+  background: url("../img/Rank\ display.png") center/100% 100% no-repeat;
+  font-size: 3vw;
+  overflow: hidden;
+}
+.topper-container .top-1 {
+  order: 2;
+}
+.top-1 .avatar{
+  background: url("../img/Gold.png") center/100% 100% no-repeat;
+  overflow: hidden;
+  padding: 5vw;
+}
+.topper-container .top-2 {
+  margin-top: 18%;
+  order: 1;
+}
+.top-2 .avatar {
+  background: url("../img/Silver.png") center/100% 100% no-repeat;
+  overflow: hidden;
+  padding: 5vw;
+}
+
+.topper-container .top-3 {
+  margin-top: 18%;
+  order: 3;
+}
+.top-3 .avatar {
+  background: url("../img/Bronze.png") center/100% 100% no-repeat;
+  overflow: hidden;
+  padding: 5vw;
+}
+.avatar {
+  max-width: 10vw;
+  max-height: 10vw;
+  border-radius: 50%;
+  margin: auto;
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.top .avatar {
+  min-width:10vw ;
+  min-height: 10vw;
+  display: flex;
+  align-items: center;
+  /* margin-top: 1vw; */
+  justify-content: center;
+}
+.top .avatar img{
+  margin-top: 3.5vw;
+    border-radius: 50%;
+    width: 149%;
+    height: 129%;
+    object-fit: contain;
+}
+
+.winner-container .avatar {
+  width: 6vw;
+  height: 6vw;
+  border-radius: 50%;
+  border: 1px solid goldenrod;
+  background: black;
+}
+.info {
+  margin-bottom: 3vw;
+  font-size: 3.2vw;
+  display: flex;
+  flex-direction: column;
+  font-style: italic;
+  color: white;
+  font-weight: 600;
+}
+.info .name {
+  /* text-wrap: nowrap; */
+}
+.info .beans-container {
+  margin-top: 0.5vw;
+  display: flex;
+  gap: 1vw;
+  font-size: 2.5vw;
+}
+.info .beans-container .bean-img {
+  max-width: 3vw;
+  max-height: 3vw;
+  
+}
+
+.winner-container {
+  display: flex;
+  flex-direction: column;
+  width: 68%;
+  /* height: 450px; */
+  align-items: center;
+  margin-top: 16px;
+  padding-inline: 16px;
+  gap: 8px;
+  margin-bottom: 32px;
+  padding-bottom: 47px;
+  margin-inline: auto;
+}
+
+.winner-strip {
+  color: #f6d785;
+  display: flex;
+  width: 100%;
+  /* min-height: 40px; */
+  align-items: center;
+  padding-inline: 14px;
+  padding-bottom: 2vw;
+  background: url("../img/leaderboardStrip.png") center/100% 100% no-repeat;
+  gap: 1em;
+  padding-top: 1vw;
+}
+
+.winner-strip .info {
+  flex: 1;
+  color: inherit;
+}
+
+.winner-strip .info .beans-container {
+  display: flex !important;
+  gap: 1vw;
+  background: #232323;
+}
+.winner-strip .info .beans-container .bean-img {
+  max-width: 5vw !important;
+}
