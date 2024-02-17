@@ -200,6 +200,7 @@ header img {
   margin-left: 6vw;
   font-size: 5vw;
   font-weight: 600;
+  transform: scale(1.5);
 }
 
 .topper-container {
@@ -278,6 +279,7 @@ header img {
   align-items: center;
   /* margin-top: 1vw; */
   justify-content: center;
+  transform: scale(1.5);
 }
 
 .top .avatar img {
@@ -294,6 +296,7 @@ header img {
   border-radius: 50%;
   border: 1px solid goldenrod;
   background: black;
+  transform: scale(1.5);
 }
 
 .info {
